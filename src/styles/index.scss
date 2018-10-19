@@ -1,0 +1,128 @@
+@import './element-ui.scss';
+@import './mixin.scss';
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+//vue router transition css
+.fade-enter-active,
+.fade-leave-active {
+  transition: all .2s ease
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+}
+
+//main-container全局样式
+.app-main{
+  min-height: 100%
+}
+
+.app-container {
+  padding: 20px;
+}
+
+.svg-icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+.box-card {
+  margin: 10px 4px;
+}
+
+//table
+.cw-tree-table {
+  font-size: 13px !important;
+  color:#1f2d3d !important;
+}
+.el-card.is-always-shadow, .el-card.is-hover-shadow:focus, .el-card.is-hover-shadow:hover{
+  box-shadow:none;
+  -webpack-box-shadow:none;
+}
+.el-table {
+  thead{
+    color:#1f2d3d !important;
+    font-weight: 700 !important;
+    tr{
+      height:40px;
+    }
+  }
+  table{
+    tr{
+      height:48px;
+      font-size: 13px;
+    }
+  }
+}
+.options-action {
+  color:#409EFF;
+  font-size:12px;
+  margin-right:6px;
+}
+
+//dialog
+.el-dialog__header{
+  margin-bottom:20px;
+}
+
+//tree
+.el-scrollbar__wrap{
+  height:100%;
+  .el-select-dropdown__item{
+    height:auto;
+  }
+}
+.el-form-item__content{
+  .el-tree{
+    position: fixed;
+    cursor: default;
+    background: #fff;
+    color: #606266;
+    z-index: 99;
+    width: 783px;
+    border: 1px solid #ccc;
+  }
+}

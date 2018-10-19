@@ -1,0 +1,46 @@
+{
+    "data":[
+        {
+            "path": "/orgnizition",
+            "component": "(resolve) => require(['../views/layout/Layout.vue'], resolve)",
+            "redirect": "/orgnizition/orglist",
+            "name": "组织机构管理",
+            "children": [
+                { 
+                    "path": "orglist", 
+                    "icon": "el-icon-date", 
+                    "component":"(resolve) => require(['@/view/orgnizition/orgList.vue'], resolve)", 
+                    "name": "单位维护"
+                },
+                { 
+                    "path": "dapartment-manage", 
+                    "icon": "el-icon-date", 
+                    "component": "(resolve) => require(['@/view/orgnizition/department-manage.vue'], resolve)", 
+                    "name": "部门管理"
+                }
+            ]
+        },
+        {
+            "path": "/system",
+            "component": "(resolve) => require(['../views/layout/Layout.vue'], resolve)",
+            "redirect": "/system/resource",
+            "name": "系统管理",
+            "children": [
+                { 
+                    "path": "resource", 
+                    "icon": "el-icon-date", 
+                    "component":"(resolve) => require(['@/view/system/resource-manage.vue'], resolve)", 
+                    "name": "资源管理"
+                },
+                { 
+                    "path": "role", 
+                    "icon": "el-icon-date", 
+                    "component": "(resolve) => require(['@/view/system/role-manage.vue'], resolve)", 
+                    "name": "角色管理"
+                }
+            ]
+        }
+    ],
+    "respCode":"200",
+    "respDesc":"请求已完成"
+}

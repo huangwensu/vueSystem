@@ -1,0 +1,249 @@
+ //覆盖一些element-ui样式 覆盖css样式可在这里添加
+ body {
+   font-family: "Microsoft YaHei", "微软雅黑", "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", Arial, sans-serif !important;
+ }
+
+ .el-upload {
+   input[type="file"] {
+     display: none !important;
+   }
+ }
+
+ .el-upload__input {
+   display: none;
+ }
+
+ //暂时性解决diolag 问题 https://github.com/ElemeFE/element/issues/2461
+ .el-dialog {
+   transform: none;
+   left: 0;
+   position: relative;
+   margin: 0 auto;
+ }
+
+ //element ui upload
+ .upload-container {
+   .el-upload {
+     width: 100%;
+     .el-upload-dragger {
+       width: 100%;
+       height: 200px;
+     }
+   }
+ }
+
+ .el-dialog__header {
+   padding: 15px 15px 10px;
+   background: rgba(102, 102, 204, 0.9);
+   /* background: #409eff; */
+ }
+
+ .el-dialog__title {
+   color: #fff;
+ }
+
+ .el-dialog__headerbtn .el-dialog__close {
+   color: #e5e7ea;
+ }
+
+ .el-dialog__body {
+   padding: 0px 20px;
+   color: #5a5e66;
+   line-height: 24px;
+   font-size: 14px;
+ }
+
+ .cw-com .el-dialog__body {
+   padding: 16px 20px 0;
+ }
+
+ .cw-com .sel-tree {
+   height: 300px;
+   min-height: 100px;
+   border: 1px solid gainsboro;
+ }
+
+ // 对于列表页面的优化
+ .el-card__header {
+   padding: 6px 20px;
+   border-bottom: 1px solid #d1dbe5;
+   box-sizing: border-box;
+ }
+
+ .el-card__body {
+   padding: 2px 2px 30px;
+ }
+
+ .cw .el-card__body {
+   padding: 2px 2px 30px;
+ }
+
+
+ .el-form-item {
+   margin-bottom: 16px;
+ }
+
+ .el-button [class*=el-icon-]+span {
+   margin-left: 0px;
+ }
+
+ .el-pagination {
+   white-space: nowrap;
+   padding: 10px 0px;
+   color: #48576a;
+ }
+
+ .el-card__header {
+   padding: 6px 20px;
+   border-bottom: 1px solid #d1dbe5;
+   box-sizing: border-box;
+ }
+
+ /* .el-card__body {
+   padding: 0;
+ } */
+
+ .el-form-item {
+   margin-bottom: 16px;
+ }
+
+ .el-button [class*=el-icon-]+span {
+   margin-left: 0px;
+ }
+
+ .el-tree {
+   overflow-x: auto !important;
+ }
+
+ .el-message {
+   min-width: 300px;
+   top: 62px !important;
+   padding: 13px 15px 14px 20px;
+ }
+
+ .el-message-box__content {
+   padding: 16px 20px;
+ }
+
+ .el-message-box__btns {
+   padding: 6px 20px 10px;
+ }
+
+ .el-message-box__title {
+   color: #5c5c5c;
+ }
+
+ .el-breadcrumb__inner,
+ .el-breadcrumb__inner a {
+   color: #5e6573;
+ }
+
+ ul,
+ ul li {
+   list-style: none;
+ }
+
+ .el-cardv__header {
+   padding: 6px 20px;
+   border-bottom: 1px solid #d1dbe5;
+   box-sizing: border-box;
+ }
+
+ .el-cardv__body {
+   padding: 0;
+ }
+
+ .el-table {
+   color: #48576a;
+ }
+
+ .el-tablev__footer-wrapper thead div,
+ .el-tablev__header-wrapper thead div {
+   color: #48576a;
+ }
+
+ .el-upload--picture-card {
+   background-color: #fbfdff;
+   border: 1px dashed #c0ccda;
+   border-radius: 6px;
+   box-sizing: border-box;
+   width: 100px;
+   height: 100px;
+   cursor: pointer;
+   line-height: 100px;
+   vertical-align: top;
+ }
+
+ .el-upload-list--picture-card .el-upload-list__item {
+   overflow: hidden;
+   background-color: #fff;
+   border: 1px solid #c0ccda;
+   border-radius: 6px;
+   box-sizing: border-box;
+   width: 100px;
+   height: 100px;
+   margin: 0 8px 8px 0;
+   display: inline-block;
+ }
+
+ .avatar {
+   width: 100px;
+   height: 100px;
+   display: block;
+ }
+
+ .cw-upload .el-form-item__content {
+   line-height: 0px;
+   position: relative;
+   font-size: 14px;
+ }
+
+ .input-tree-wrap {
+   position: absolute;
+   bottom: 40px;
+   width: 100%;
+ }
+
+ .input-tree-wrap-down {
+   position: absolute;
+   top: 40px;
+   width: 100%;
+ }
+
+ .back-btn {
+   padding: 10px 18px;
+ }
+
+ .el-table td {
+   padding: 2px 0;
+ }
+
+ .el-table th {
+    padding: 5px 0;
+    background: #f9f9f9;
+ }
+
+.cw .el-table td {
+  padding: 2px 0;
+}
+
+.cw .el-table th {
+   padding: 5px 0;
+ }
+
+ /* .el-form-item {
+   margin-bottom: 0;
+ } */
+ .el-form-item--mini.el-form-item,
+ .el-form-item--small.el-form-item {
+   margin-bottom: 6px;
+ }
+
+ .app-container .el-form {
+   margin-bottom: 10px;
+
+ }
+
+
+
+
